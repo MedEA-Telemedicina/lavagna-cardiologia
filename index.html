@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
 
+<style>
+
+body{
+margin:0;
+background:#e6e6e6;
+font-family:Segoe UI, Arial;
+}
+
+.header{
+background:#1fa2d6;
+color:white;
+font-size:34px;
+padding:6px 20px;
+}
+
+.day{
+margin-left:30px;
+}
+
+.board{
+display:grid;
+grid-template-columns:1fr 1fr 2fr;
+grid-template-rows:auto auto auto;
+gap:2px;
+padding:6px;
+height:calc(100vh - 120px);
+}
+
+.box{
+background:#f3f3f3;
+border:1px solid #666;
+display:flex;
+flex-direction:column;
+}
+
+.title{
+font-weight:bold;
+text-align:center;
+padding:4px;
+border-bottom:1px solid #666;
+}
+
+.subtitle{
+text-align:center;
+font-size:14px;
+font-style:italic;
+border-bottom:1px solid #666;
+}
+
+.content{
+padding:20px;
+font-size:24px;
+font-weight:600;
+line-height:1.5;
+text-align:center;
+}
+
+.sectionTitle{
+background:#d5dde6;
+text-align:center;
+font-weight:bold;
+padding:4px;
+border-top:1px solid #666;
+border-bottom:1px solid #666;
+}
+
+.footer{
+border-top:2px solid #555;
+background:#e5e5e5;
+padding:6px;
+}
+
+.footerTitle{
+text-align:center;
+font-weight:bold;
+margin-bottom:6px;
+}
+
+.footerGrid{
+display:grid;
+grid-template-columns:1fr 80px 1fr 80px;
+gap:2px;
+}
+
+.cell{
+background:#f0f0f0;
+border:1px solid #777;
+padding:6px;
+font-size:18px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+MEDICI IN TURNO <span id="giorno" class="day"></span>
+</div>
+
+<div class="board">
+
+<div class="box">
+<div class="title">MATTINA</div>
+<div class="subtitle">COMPLETO</div>
+<div id="mattina" class="content"></div>
+</div>
+
+<div class="box">
+<div class="title">POMERIGGIO</div>
+<div class="subtitle">COMPLETO</div>
+<div id="pomeriggio" class="content"></div>
+</div>
+
+<div class="box">
+<div class="title">HOLTER CARDIACO</div>
+<div id="holterCardiaco" class="content"></div>
+
+<div class="sectionTitle">HOLTER PRESSORIO</div>
+<div id="holterPressorio" class="content"></div>
+</div>
+
+<div class="box">
+<div class="title">SOLO ECG</div>
+<div id="soloEcgMattina" class="content"></div>
+</div>
+
+<div class="box">
+<div class="title">SOLO ECG</div>
+<div id="soloEcgPomeriggio" class="content"></div>
+</div>
+
+<div class="box">
+<div class="title">SPIROMETRIA</div>
+<div id="spirometria" class="content"></div>
+</div>
+
+<div class="box" style="grid-column:3;">
+<div class="title">POLISONNOGRAFIA</div>
+<div id="polisonnografia" class="content"></div>
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="footerTitle">ORARIO CARDIOLOGI SOLO ECG</div>
+
+<div id="footerGrid" class="footerGrid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
