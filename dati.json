@@ -1,1 +1,26 @@
+{
+"giorno":"Venerdì",
 
+"mattina":"CAGNETTA V. - D'ANGELI I. - GOLINO P. - GREGORI M. - MUSUMECI C. - SETZU T.",
+
+"pomeriggio":"BINI R. - GISMONDI A. - GOLINO P. - GREGORI M. - INGALLINA G. - SAVONITTO G.",
+
+"holterCardiaco":"JACOMELLI I. - SCARDIA A. - TUCCI S.",
+
+"holterPressorio":"BELLI L. - CARDILLO M. - CARDONE A.",
+
+"soloEcgMattina":"BALLERINI A. - MAZZOCCHI L. - TUSA F.",
+
+"soloEcgPomeriggio":"BATTAGLIA D. - COCCHIARELLA L. - FORMISANO R. - FUSI C.",
+
+"spirometria":"MORETTA A.",
+
+"polisonnografia":"CERRONI R. - FABIANI V. - MORANDO V.",
+
+"orari":[
+"LABRIOLA 16:00/20:00",
+"SANGUETTOLI 16:00/20:00",
+"TARANTINI 16:00/20:00",
+"TUCCI 16:00/20:00"
+]
+}
